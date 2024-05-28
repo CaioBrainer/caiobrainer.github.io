@@ -1,11 +1,96 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfólio - Caio Brainer</title>
-  <style>
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página com Cards</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="menu-container">
+                <div class="hamburger">
+                    &#9776;
+                </div>
+                <ul class="menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#resume">Sobre Mim</a></li>
+                    <li><a href="#portfolio">Portfólio</a></li>
 
-<p>Em construção...</p>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div id="resume" class="container resume">
+            <h1>Resume</h1>
+            <div class="resume-grid">
+                <div class="resume-photo div2">
+                    <img src="images/caio_foto.png" alt="Foto do Perfil" class="profile-photo">
+                </div>
+                <div class="resume-header div3">
+                    <h2>Caio Brainer</h2>
+                    <p>Informações de Contato: Caio@mail.com</p>
+                    <p align="justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto quasi velit ea nesciunt harum adipisci a modi. Optio earum tempore esse odit veritatis nostrum minus, doloremque, repellat dolorum, ullam rerum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, eius! Nam libero quos totam aperiam corporis, adipisci cupiditate possimus maiores consequuntur quas, labore at eius, animi nulla sapiente eum. Aliquid?</p>
+                </div>
+                <div class="resume-content div4">
+                    <div class="section">
+                        <h2>Experiência Profissional</h2>
+                        <p><strong>Empresa XYZ</strong> - Cargo (Ano - Ano)</p>
+                        <ul>
+                            <li>Responsabilidade 1</li>
+                            <li>Responsabilidade 2</li>
+                            <li>Responsabilidade 3</li>
+                        </ul>
+                    </div>
+                    <div class="section">
+                        <h2>Educação</h2>
+                        <p><strong>Universidade ABC</strong> - Curso (Ano - Ano)</p>
+                    </div>
+                    <div class="section">
+                        <h2>Habilidades</h2>
+                        <ul>
+                            <li>Habilidade 1</li>
+                            <li>Habilidade 2</li>
+                            <li>Habilidade 3</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="portfolio" class="container">
+            <h1>Portfolio</h1>
+            <div class="card">
+                <a href="https://github.com/CaioBrainer/Projeto-Satisfacao-dos-Clientes-Santander">
+                    <img src="images/santander_logo_.png" alt="Imagem 1">
+                    <div class="info">Análise de satisfação dos clientes Santander</div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://github.com/CaioBrainer/Projeto-Satisfacao-dos-Clientes-Santander">
+                    <img src="images/santander_logo_.png" alt="Imagem 1">
+                    <div class="info">Análise de satisfação dos clientes Santander</div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://github.com/CaioBrainer/Projeto-Satisfacao-dos-Clientes-Santander">
+                    <img src="images/santander_logo_.png" alt="Imagem 1">
+                    <div class="info">Análise de satisfação dos clientes Santander</div>
+                </a>
+            </div>
+            <!-- Outros cards aqui -->
+        </div>
+    </main>
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const menu = document.querySelector('.menu');
+
+        hamburger.addEventListener('click', () => {
+            menu.classList.toggle('show');
+        });
+    </script>
+</body>
 </html>
