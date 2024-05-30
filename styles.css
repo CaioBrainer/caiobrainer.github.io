@@ -84,7 +84,7 @@ nav ul.menu li:hover .dropdown-content {
 .container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: left;
     width: 80%;
     margin: 2em auto;
     box-sizing: border-box;
@@ -93,6 +93,7 @@ nav ul.menu li:hover .dropdown-content {
     box-shadow: 0 4px 8px #000;
     background-color: #6AA5B0;
     background: linear-gradient(180deg, #6AA5B0, #fff);
+    padding: 35px;
 
 }
 
@@ -101,6 +102,9 @@ nav ul.menu li:hover .dropdown-content {
     text-align: left;
     margin-bottom: 1em;
     color: #000000;
+    background-color: #D4CFCB;
+    border-radius: 5px;
+    background: linear-gradient(180deg, #D4CFCB, #fff);
 }
 
 .card {
@@ -109,7 +113,7 @@ nav ul.menu li:hover .dropdown-content {
     margin: 1em;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(31, 30, 30, 0.678);
-    transition: transform 0.2s;
+    transition: transform 0.1s;
     border-radius: 10px;
     border: #333;
     background-color: #ffffff;
@@ -126,10 +130,14 @@ nav ul.menu li:hover .dropdown-content {
     background: rgba(0, 0, 0, 0.75);
     color: white;
     width: 100%;
-    padding: 1em;
+    padding-top: 15px;
+    padding-bottom: 15px;
     transform: translateY(100%);
-    transition: transform 0.2s;
+    transition: transform 0.1s;
+    text-align: center;
+    color: #FFFFFF;
 }
+
 
 .card:hover {
     transform: scale(1.05);
