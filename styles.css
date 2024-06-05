@@ -71,15 +71,6 @@ nav ul.menu li:hover .dropdown-content {
     color: white;
 }
 
-.banner {
-    color: rgb(0, 0, 0);
-    width: 80%;
-    text-align: center;
-    padding: 2em 0;
-    margin-top: 3.2em;
-    margin: 2em auto;
-    background-color: #6AA5B0;
-}
 
 .container {
     display: flex;
@@ -89,7 +80,6 @@ nav ul.menu li:hover .dropdown-content {
     margin: 2em auto;
     box-sizing: border-box;
     border-radius: 6px;
-    margin: 4em auto 4em;
     box-shadow: 0 4px 8px #000;
     background-color: #6AA5B0;
     background: linear-gradient(180deg, #6AA5B0, #fff);
@@ -155,19 +145,18 @@ nav ul.menu li:hover .dropdown-content {
 .resume {
     box-shadow: 0 4px 8px rgba(31, 30, 30, 0.678);
     border-radius: 10px;
-    padding: 2em;
-    margin: 6em auto 6em;
-    width: 80%;
+    margin-top: 6em;
 }
 
 .resume h1 {
     color: #000;
+    font-size:40px;
 }
 
 .resume-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(4, 2fr);
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: repeat(1, auto);
     grid-column-gap: 25px;
     grid-row-gap: 25px;
 }
@@ -312,11 +301,12 @@ nav ul.menu li:hover .dropdown-content {
 
     .resume {
         width: 90%;
+        margin-top: 8em;
     }
     
 
     .resume-header {
-        grid-area: 1 / 2 / 2 / 5;
+        grid-area: 1 / 1 / 1 / 6;
     }
 
     .profile-photo {
@@ -328,6 +318,9 @@ nav ul.menu li:hover .dropdown-content {
     .card {
         width: calc(100% - 2em);
     }
+
+    .resume {
+    margin-top: 8em;}
 
     .resume-header {
         flex-direction: column;
